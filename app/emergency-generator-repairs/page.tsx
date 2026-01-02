@@ -40,9 +40,52 @@ export default function EmergencyGeneratorRepairsPage() {
 
   return (
     <>
-      <StructuredData type="service" />
+      <StructuredData data={{
+  "@context": "https://schema.org",
+  "@type": "EmergencyService",
+  "name": "24/7 Emergency Generator Repairs",
+  "serviceType": "Emergency Generator Repair",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Generator Repair Services",
+    "telephone": "069 382 4908",
+    "url": "https://generatorrepairservices.co.za",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gauteng",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  },
+  "description": "24/7 emergency generator repairs across Gauteng. Under 2-hour response time. All brands. Emergency breakdown service.",
+  "url": "https://generatorrepairservices.co.za/emergency-generator-repairs",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "069 382 4908",
+      "availableLanguage": "English",
+      "contactType": "Emergency"
+    }
+  }
+}} />
       <Breadcrumbs items={breadcrumbs} />
-
       <div className="container mx-auto px-4 py-12 max-w-5xl">
         <div className="mb-12 text-center">
           <div className="inline-flex items-center gap-2 bg-destructive text-white px-6 py-3 rounded-full mb-4 animate-pulse text-lg font-bold">
