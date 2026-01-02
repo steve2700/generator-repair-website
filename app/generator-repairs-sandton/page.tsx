@@ -56,8 +56,54 @@ export default function GeneratorRepairsSandtonPage() {
 
   return (
     <>
-      <StructuredData type="service" />
+      <StructuredData data={{
+  "@context": "https://schema.org",
+  "@type": "Generator Repairs Sandton",
+  "name": "Generator Repairs Sandton",
+  "serviceType": "Generator Repairs Sandton",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Generator Repair Services",
+    "telephone": "069 382 4908",
+    "url": "https://generatorrepairservices.co.za",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gauteng",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  },
+  "description": "Professional generator repairs in Sandton. Diesel & petrol generators. 24-hour emergency service. Certified technicians serving all suburbs.",
+  "url": "https://generatorrepairservices.co.za/generator-repairs-sandton",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "069 382 4908",
+      "availableLanguage": "English",
+      "contactType": "Emergency"
+    }
+  }
+}} />
       <Breadcrumbs items={breadcrumbs} />
+      
+      
 
       <div className="container mx-auto px-4 py-12 max-w-5xl">
         <div className="mb-12 text-center">
