@@ -6,7 +6,7 @@ import ContactCTASection from "@/components/contact-cta-section"
 import StructuredData from "@/components/structured-data"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Petrol Generator Repairs Gauteng 2025 | #1 Expert Gasoline Engine Service | Call 069 382 4908",
+  title: "★★★★★ Petrol Generator Repairs Gauteng 2026 | #1 Expert Gasoline Engine Service | Call 069 382 4908",
   description:
     "★★★★★ #1 professional petrol generator repairs across Gauteng. Fast repair service for all petrol/gasoline generator brands. Carburetor cleaning, spark plug replacement. Call 069 382 4908!",
   openGraph: {
@@ -28,8 +28,53 @@ export default function PetrolGeneratorRepairsPage() {
 
   return (
     <>
-      <StructuredData type="service" />
+      <StructuredData data={{
+  "@context": "https://schema.org",
+  "@type": "Petrol Generator Repairs Gauteng",
+  "name": "Petrol Generator Repairs Gauteng",
+  "serviceType": "Petrol Generator Repairs Gauteng",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Generator Repair Services",
+    "telephone": "069 382 4908",
+    "url": "https://generatorrepairservices.co.za",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gauteng",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  },
+  "description": "Professional petrol generator repairs across Gauteng. Fast repair service for all petrol generator brands. Call 069 382 4908 for expert repairs and maintenance.",
+  "url": "https://generatorrepairservices.co.za/petrol-generator-repairs",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "069 382 4908",
+      "availableLanguage": "English",
+      "contactType": "Emergency"
+    }
+  }
+}} />
       <Breadcrumbs items={breadcrumbs} />
+      
 
       <div className="container mx-auto px-4 py-12 max-w-5xl">
         <div className="mb-12 text-center">
