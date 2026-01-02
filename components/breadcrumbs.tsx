@@ -48,3 +48,5 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
     </nav>
   )
 }
+
+export default Breadcrumbs

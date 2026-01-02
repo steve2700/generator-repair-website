@@ -29,3 +29,5 @@ export function SuburbsGrid({ title, suburbs }: SuburbsGridProps) {
     </section>
   )
 }
+
+export default SuburbsGrid

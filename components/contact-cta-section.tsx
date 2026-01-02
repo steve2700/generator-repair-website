@@ -82,3 +82,5 @@ export function ContactCTASection() {
     </section>
   )
 }
+
+export default ContactCTASection
