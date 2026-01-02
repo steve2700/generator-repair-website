@@ -28,9 +28,53 @@ export default function IndustrialGeneratorRepairsPage() {
 
   return (
     <>
-      <StructuredData type="service" />
+      <StructuredData data={{
+  "@context": "https://schema.org",
+  "@type": "Industrial Generator Repairs",
+  "name": "Industrial Generator Repairsg",
+  "serviceType": "Industrial Generator Repairs",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Generator Repair Services",
+    "telephone": "069 382 4908",
+    "url": "https://generatorrepairservices.co.za",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gauteng",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  },
+  "description": "Expert industrial generator repairs for factories, warehouses, and commercial facilities across Gauteng. 24/7 emergency service. Call 069 382 4908.",
+  "url": "https://generatorrepairservices.co.za/industrial-generator-repairs",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "069 382 4908",
+      "availableLanguage": "English",
+      "contactType": "Emergency"
+    }
+  }
+}} />
       <Breadcrumbs items={breadcrumbs} />
-
+      
       <div className="container mx-auto px-4 py-12 max-w-5xl">
         <div className="mb-12 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-balance">
