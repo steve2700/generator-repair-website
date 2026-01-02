@@ -6,11 +6,21 @@ import Breadcrumbs from "@/components/breadcrumbs"
 import ContactCTASection from "@/components/contact-cta-section"
 
 export const metadata: Metadata = {
-  title: "Affordable Generator Repairs | Quality Service at Fair Prices | 069 382 4908",
+  title: "★★★★★ Affordable Generator Repairs 2025 | Quality Service at Fair Prices",
   description:
-    "Quality generator repairs at affordable prices across Gauteng. Transparent quotes, no hidden fees, honest service. Professional repairs that don't break the bank. Call 069 382 4908.",
-  keywords:
-    "affordable generator repairs, cheap generator repairs, budget generator service, cost-effective generator repairs, reasonable generator repair prices",
+    "★★★★★ Quality generator repairs at affordable prices across Gauteng. Transparent quotes, no hidden fees, honest service. Professional repairs that don't break the bank. Call 069 382 4908.",
+  openGraph: {
+    title: "Affordable Generator Repairs | Quality Service at Fair Prices",
+    description:
+      "Quality generator repairs at affordable prices. Transparent quotes, no hidden fees, honest service across Gauteng.",
+    url: "https://generatorrepairservices.co.za/affordable-generator-repairs",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/affordable-generator-repairs",
+  },
 }
 
 export default function AffordableGeneratorRepairsPage() {

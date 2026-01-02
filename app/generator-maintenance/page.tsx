@@ -12,17 +12,18 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Generator Maintenance Gauteng | Preventative Maintenance Plans | 069 382 4908",
+  title: "★★★★★ Generator Maintenance Gauteng 2025 | #1 Preventative Maintenance Plans | Call 069 382 4908",
   description:
-    "Professional generator maintenance programs in Gauteng. Preventative maintenance contracts for diesel & petrol generators. Call 069 382 4908.",
-  keywords: [
-    "generator maintenance",
-    "preventative maintenance",
-    "Gauteng",
-    "Johannesburg",
-    "Pretoria",
-    "maintenance contracts",
-  ],
+    "★★★★★ #1 professional generator maintenance programs in Gauteng. Preventative maintenance contracts for diesel & petrol generators. Save money, prevent breakdowns. Call 069 382 4908!",
+  openGraph: {
+    title: "Generator Maintenance Gauteng | Preventative Maintenance Plans",
+    description:
+      "Professional generator maintenance programs in Gauteng. Preventative maintenance contracts for diesel & petrol generators. Call 069 382 4908.",
+    url: "https://generatorrepairservices.co.za/generator-maintenance",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
   alternates: {
     canonical: "https://generatorrepairservices.co.za/generator-maintenance",
   },

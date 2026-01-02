@@ -6,11 +6,21 @@ import ContactCTASection from "@/components/contact-cta-section"
 import StructuredData from "@/components/structured-data"
 
 export const metadata: Metadata = {
-  title: "Generator Repairs Centurion | 24/7 Service | Call 069 382 4908",
+  title: "★★★★★ Generator Repairs Centurion 2025 | #1 24/7 Service | Call 069 382 4908",
   description:
-    "Professional generator repairs in Centurion. Expert service across all Centurion suburbs including Irene, Highveld, Wierdapark. Call 069 382 4908 for reliable repairs.",
-  keywords:
-    "generator repairs Centurion, generator service Centurion, generator repair Irene, Centurion generator repairs",
+    "★★★★★ #1 professional generator repairs in Centurion. Expert service across Irene, Highveld, Wierdapark & all Centurion suburbs. Same-day repairs. Call 069 382 4908!",
+  openGraph: {
+    title: "Generator Repairs Centurion | Expert 24/7 Emergency Service",
+    description:
+      "Professional generator repairs in Centurion. Expert service across all Centurion suburbs including Irene, Highveld, Wierdapark. Call 069 382 4908.",
+    url: "https://generatorrepairservices.co.za/generator-repairs-centurion",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/generator-repairs-centurion",
+  },
 }
 
 export default function GeneratorRepairsCenturionPage() {

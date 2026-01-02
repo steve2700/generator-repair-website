@@ -1,11 +1,10 @@
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
-import { ServicesGrid } from "@/components/services-grid"
 import { SuburbsGrid } from "@/components/suburbs-grid"
 import { ContactCTASection } from "@/components/contact-cta-section"
 import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
 import { SchemaMarkup } from "@/components/schema-markup"
-import { Clock, Shield, Award } from "lucide-react"
+import { Clock, Shield, Award, Wrench, Settings, AlertCircle, Zap, Fuel, Factory, MapPin } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Link from "next/link"
@@ -14,31 +13,32 @@ import Phone from "@/components/icons/phone"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Generator Repair Services Gauteng | 24-Hour Emergency Repairs | 069 382 4908",
+  title: "★★★★★ Generator Repairs Gauteng 2025 | #1 Expert 24/7 Service | Call 069 382 4908",
   description:
-    "Professional generator repairs, servicing & maintenance in Gauteng. 24/7 emergency service. Diesel, petrol & industrial generators. Call 069 382 4908 for same-day repairs in Johannesburg, Pretoria, Sandton.",
+    "★★★★★ #1 professional generator repairs, servicing & maintenance in Gauteng. 24/7 emergency service. Diesel, petrol & industrial generators. Same-day repairs. Call 069 382 4908!",
   keywords: [
-    "generator repairs",
+    "generator repairs gauteng",
     "generator servicing",
     "generator maintenance",
-    "Johannesburg",
-    "Pretoria",
-    "Sandton",
-    "Centurion",
-    "Gauteng",
     "emergency generator repairs",
     "diesel generator repairs",
     "24 hour generator repairs",
+    "generator repairs johannesburg",
+    "generator repairs pretoria",
+    "generator repairs sandton",
+    "generator repairs centurion",
   ],
+  openGraph: {
+    title: "Generator Repairs Gauteng | Expert 24/7 Emergency Service",
+    description:
+      "Professional generator repairs, servicing & maintenance across Gauteng. 24/7 emergency service. All brands. Same-day repairs. Call 069 382 4908.",
+    url: "https://generatorrepairservices.co.za",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
   alternates: {
     canonical: "https://generatorrepairservices.co.za",
-  },
-  openGraph: {
-    title: "Generator Repair Services Gauteng | 24-Hour Emergency Repairs",
-    description:
-      "Expert generator repairs, servicing & maintenance across Gauteng. 24/7 emergency service. Call 069 382 4908.",
-    url: "https://generatorrepairservices.co.za",
-    type: "website",
   },
 }
 
@@ -85,12 +85,16 @@ export default function HomePage() {
     <>
       <SchemaMarkup type="LocalBusiness" />
       <SiteHeader />
-      <main>
-        <section className="relative bg-gradient-to-b from-primary/10 via-background to-background py-20 md:py-32 overflow-hidden">
+      <main className="min-h-screen">
+        <section className="relative bg-gradient-to-br from-primary/5 via-background to-primary/10 overflow-hidden">
           <div className="absolute inset-0 opacity-10">
-            <img src="/professional-technician-repairing-industrial-gener.jpg" alt="" className="w-full h-full object-cover" />
+            <img
+              src="/professional-technician-repairing-industrial-gener.jpg"
+              alt="Generator repair background"
+              className="w-full h-full object-cover"
+            />
           </div>
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="relative z-10 container mx-auto px-4 py-16 md:py-24">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 bg-destructive/90 text-white px-4 py-2 rounded-full mb-6 animate-pulse">
                 <Clock className="h-5 w-5" />
@@ -332,7 +336,181 @@ export default function HomePage() {
           </div>
         </section>
 
-        <ServicesGrid />
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Comprehensive Generator Services Across Gauteng</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+                From emergency repairs to preventative maintenance, we offer complete generator solutions for
+                residential, commercial, and industrial clients throughout Johannesburg, Pretoria, Sandton, and
+                Centurion.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Wrench className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">
+                    <Link href="/generator-repairs" className="hover:text-primary transition-colors">
+                      Generator Repairs
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    Expert diagnosis and repair of all generator issues. From electrical faults to mechanical problems,
+                    we fix it right the first time.
+                  </p>
+                  <Link href="/generator-repairs" className="text-primary font-semibold hover:underline">
+                    Learn More →
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Settings className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">
+                    <Link href="/generator-servicing" className="hover:text-primary transition-colors">
+                      Generator Servicing
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    Regular servicing extends generator life and prevents costly breakdowns. Scheduled maintenance from
+                    R850 annually.
+                  </p>
+                  <Link href="/generator-servicing" className="text-primary font-semibold hover:underline">
+                    View Service Plans →
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <AlertCircle className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">
+                    <Link href="/24-hour-generator-repairs" className="hover:text-primary transition-colors">
+                      24-Hour Emergency Repairs
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    Power failures don't wait. Our emergency service operates 24/7/365 with typical response under 2
+                    hours.
+                  </p>
+                  <Link href="/24-hour-generator-repairs" className="text-primary font-semibold hover:underline">
+                    Emergency Service →
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Zap className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">
+                    <Link href="/diesel-generator-repairs" className="hover:text-primary transition-colors">
+                      Diesel Generator Repairs
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    Specialized diesel engine diagnostics and repairs. All brands including Perkins, Cummins, Yanmar,
+                    and Caterpillar.
+                  </p>
+                  <Link href="/diesel-generator-repairs" className="text-primary font-semibold hover:underline">
+                    Diesel Services →
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Fuel className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">
+                    <Link href="/petrol-generator-repairs" className="hover:text-primary transition-colors">
+                      Petrol Generator Repairs
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    Fast petrol generator repairs for Honda, Yamaha, Briggs & Stratton, and other portable generators.
+                  </p>
+                  <Link href="/petrol-generator-repairs" className="text-primary font-semibold hover:underline">
+                    Petrol Services →
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <Factory className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">
+                    <Link href="/industrial-generator-repairs" className="hover:text-primary transition-colors">
+                      Industrial Generator Repairs
+                    </Link>
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    Large-scale industrial generator maintenance and repairs. Minimize downtime with preventative
+                    service contracts.
+                  </p>
+                  <Link href="/industrial-generator-repairs" className="text-primary font-semibold hover:underline">
+                    Industrial Solutions →
+                  </Link>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="bg-muted/50 rounded-lg p-8 mb-12">
+              <h3 className="text-2xl font-bold mb-6 text-center">Generator Services By Location</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <Link
+                  href="/generator-repairs-johannesburg"
+                  className="p-4 bg-card rounded-lg hover:bg-primary/10 transition-colors"
+                >
+                  <MapPin className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <div className="font-semibold">Johannesburg</div>
+                  <div className="text-sm text-muted-foreground">All Suburbs</div>
+                </Link>
+                <Link
+                  href="/generator-repairs-pretoria"
+                  className="p-4 bg-card rounded-lg hover:bg-primary/10 transition-colors"
+                >
+                  <MapPin className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <div className="font-semibold">Pretoria</div>
+                  <div className="text-sm text-muted-foreground">All Areas</div>
+                </Link>
+                <Link
+                  href="/generator-repairs-sandton"
+                  className="p-4 bg-card rounded-lg hover:bg-primary/10 transition-colors"
+                >
+                  <MapPin className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <div className="font-semibold">Sandton</div>
+                  <div className="text-sm text-muted-foreground">Business Hub</div>
+                </Link>
+                <Link
+                  href="/generator-repairs-centurion"
+                  className="p-4 bg-card rounded-lg hover:bg-primary/10 transition-colors"
+                >
+                  <MapPin className="h-6 w-6 text-primary mx-auto mb-2" />
+                  <div className="font-semibold">Centurion</div>
+                  <div className="text-sm text-muted-foreground">Central Gauteng</div>
+                </Link>
+              </div>
+              <div className="text-center mt-6">
+                <Link href="/contact" className="text-primary font-semibold hover:underline">
+                  View All Service Areas →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <SuburbsGrid title="Generator Repairs Across Johannesburg" suburbs={johannesburgSuburbs} />
 
@@ -346,52 +524,104 @@ export default function HomePage() {
                 <AccordionItem value="item-1">
                   <AccordionTrigger>How quickly can you respond to emergency generator repairs?</AccordionTrigger>
                   <AccordionContent className="text-base leading-relaxed">
-                    Generator Repair Services offers 24-hour emergency generator repair services across Gauteng. We aim
-                    to respond to emergency callouts within 2-4 hours in the Johannesburg, Pretoria, Sandton, and
-                    Centurion areas. Our mobile repair units are strategically positioned to provide fast response
-                    times. Call 069 382 4908 for immediate assistance with generator breakdowns.
+                    Generator Repair Services offers{" "}
+                    <Link href="/24-hour-generator-repairs" className="text-primary hover:underline font-medium">
+                      24-hour emergency generator repair services
+                    </Link>{" "}
+                    across Gauteng. We aim to respond to emergency callouts within 2-4 hours in the{" "}
+                    <Link href="/generator-repairs-johannesburg" className="text-primary hover:underline">
+                      Johannesburg
+                    </Link>
+                    ,{" "}
+                    <Link href="/generator-repairs-pretoria" className="text-primary hover:underline">
+                      Pretoria
+                    </Link>
+                    ,{" "}
+                    <Link href="/generator-repairs-sandton" className="text-primary hover:underline">
+                      Sandton
+                    </Link>
+                    , and{" "}
+                    <Link href="/generator-repairs-centurion" className="text-primary hover:underline">
+                      Centurion
+                    </Link>{" "}
+                    areas. Our mobile repair units are strategically positioned to provide fast response times. Call 069
+                    382 4908 for immediate assistance with generator breakdowns.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger>What types of generators do you repair?</AccordionTrigger>
                   <AccordionContent className="text-base leading-relaxed">
-                    We repair all types of generators including diesel generators, petrol generators, industrial
-                    generators, commercial generators, residential backup generators, and standby power systems. Our
-                    technicians are experienced with all major brands including Perkins, Cummins, Caterpillar, SDMO,
-                    Volvo Penta, Kohler, Generac, and more. From small portable generators to large industrial power
-                    systems, Generator Repair Services has the expertise to handle any repair job.
+                    We repair all types of generators including{" "}
+                    <Link href="/diesel-generator-repairs" className="text-primary hover:underline font-medium">
+                      diesel generators
+                    </Link>
+                    ,{" "}
+                    <Link href="/petrol-generator-repairs" className="text-primary hover:underline font-medium">
+                      petrol generators
+                    </Link>
+                    ,{" "}
+                    <Link href="/industrial-generator-repairs" className="text-primary hover:underline font-medium">
+                      industrial generators
+                    </Link>
+                    , commercial generators, residential backup generators, and standby power systems. Our technicians
+                    are experienced with all major brands including Perkins, Cummins, Caterpillar, SDMO, Volvo Penta,
+                    Kohler, Generac, and more. From small portable generators to large industrial power systems,
+                    Generator Repair Services has the expertise to handle any repair job.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>Do you offer generator servicing and maintenance plans?</AccordionTrigger>
+                  <AccordionTrigger>How much do generator repairs cost?</AccordionTrigger>
                   <AccordionContent className="text-base leading-relaxed">
-                    Yes, Generator Repair Services offers comprehensive generator servicing and preventative maintenance
-                    plans throughout Gauteng. Regular generator maintenance helps prevent costly breakdowns, improves
-                    fuel efficiency, and extends equipment lifespan. Our maintenance packages include oil changes,
-                    filter replacements, fuel system cleaning, battery testing, load testing, and complete system
-                    inspections. We can create custom maintenance schedules based on your generator's usage and
-                    manufacturer recommendations.
+                    Generator repair costs vary depending on the issue, but we always provide upfront quotes. Basic{" "}
+                    <Link href="/generator-servicing" className="text-primary hover:underline font-medium">
+                      generator servicing
+                    </Link>{" "}
+                    starts from R850. Simple repairs like fuel filter replacement range from R450-R1,200. More complex
+                    repairs such as alternator replacement or control panel work typically range from R1,500-R4,500. We
+                    offer transparent pricing with no hidden fees. Emergency callout fees are R650 but waived if the
+                    repair proceeds. Contact us at 069 382 4908 for a free quote.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                  <AccordionTrigger>Which areas in Gauteng do you service?</AccordionTrigger>
+                  <AccordionTrigger>Do you offer generator maintenance contracts?</AccordionTrigger>
                   <AccordionContent className="text-base leading-relaxed">
-                    Generator Repair Services provides generator repairs, servicing, and maintenance across all major
-                    Gauteng areas including Johannesburg, Pretoria, Sandton, Centurion, Fourways, Midrand, Roodepoort,
-                    Randburg, and surrounding suburbs. Our mobile repair service means we come directly to your location
-                    whether you're in a residential area, commercial property, or industrial facility. Contact us at 069
-                    382 4908 to confirm service availability in your specific area.
+                    Yes, we offer comprehensive{" "}
+                    <Link href="/generator-maintenance" className="text-primary hover:underline font-medium">
+                      generator maintenance contracts
+                    </Link>{" "}
+                    for both residential and commercial clients. Our maintenance plans include regular servicing, oil
+                    changes, filter replacements, battery checks, and system diagnostics. Preventative maintenance
+                    significantly reduces the risk of unexpected breakdowns during load shedding. Maintenance contracts
+                    start from R850 annually for small generators and include priority emergency service. Contact us to
+                    discuss a maintenance plan tailored to your generator and usage patterns.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-5">
-                  <AccordionTrigger>How much do generator repairs cost?</AccordionTrigger>
+                  <AccordionTrigger>What areas do you service?</AccordionTrigger>
                   <AccordionContent className="text-base leading-relaxed">
-                    Generator repair costs vary depending on the type of repair needed, generator size, and parts
-                    required. At Generator Repair Services, we provide transparent, upfront quotes before starting any
-                    work. Simple repairs like filter changes or spark plug replacements may cost R500-R1500, while more
-                    complex repairs involving engine work or electrical systems may range from R2000-R5000 or more. We
-                    offer free, no-obligation quotes - call 069 382 4908 or WhatsApp us for a personalized estimate
-                    based on your generator's specific needs.
+                    Generator Repair Services covers all of Gauteng including{" "}
+                    <Link href="/generator-repairs-johannesburg" className="text-primary hover:underline">
+                      Johannesburg
+                    </Link>{" "}
+                    (Sandton, Rosebank, Fourways, Randburg),{" "}
+                    <Link href="/generator-repairs-pretoria" className="text-primary hover:underline">
+                      Pretoria
+                    </Link>{" "}
+                    (Centurion, Midrand, Menlyn, Hatfield),{" "}
+                    <Link href="/generator-repairs-sandton" className="text-primary hover:underline">
+                      Sandton
+                    </Link>
+                    , and{" "}
+                    <Link href="/generator-repairs-centurion" className="text-primary hover:underline">
+                      Centurion
+                    </Link>
+                    . We also service surrounding areas including Roodepoort, Kempton Park, Boksburg, Benoni, and
+                    Krugersdorp. Our mobile repair units allow us to provide on-site service anywhere in Gauteng. Use
+                    our{" "}
+                    <Link href="/generator-repairs-near-me" className="text-primary hover:underline font-medium">
+                      generator repairs near me
+                    </Link>{" "}
+                    service to find technicians in your area.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

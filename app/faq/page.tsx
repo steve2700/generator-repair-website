@@ -9,16 +9,18 @@ import type { Metadata } from "next"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Generator Repair FAQ | Common Questions Answered | Generator Repair Services",
+  title: "★★★★★ Generator Repair FAQ 2025 | Common Questions Answered",
   description:
-    "Find answers to common questions about generator repairs, servicing, maintenance and costs. Expert advice from Generator Repair Services. Call 069 382 4908.",
-  keywords: [
-    "generator repair faq",
-    "generator service questions",
-    "generator repair cost",
-    "how often service generator",
-    "generator maintenance",
-  ],
+    "★★★★★ Find answers to common questions about generator repairs, servicing, maintenance and costs. Expert advice from Generator Repair Services. Call 069 382 4908.",
+  openGraph: {
+    title: "Generator Repair FAQ | Common Questions Answered",
+    description:
+      "Find answers to common generator repair questions. Expert advice on repairs, servicing, maintenance, costs, and more.",
+    url: "https://generatorrepairservices.co.za/faq",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
   alternates: {
     canonical: "https://generatorrepairservices.co.za/faq",
   },

@@ -6,10 +6,31 @@ import ContactCTASection from "@/components/contact-cta-section"
 import StructuredData from "@/components/structured-data"
 
 export const metadata: Metadata = {
-  title: "Diesel Generator Repairs Gauteng | Expert Diesel Engine Service",
+  title: "★★★★★ Diesel Generator Repairs Gauteng 2025 | Expert Diesel Engine Service",
   description:
-    "Professional diesel generator repairs across Gauteng. 24/7 emergency service for all diesel generator brands. Call 069 382 4908 for expert repairs.",
-  keywords: "diesel generator repairs, diesel generator service, diesel engine repairs, generator repairs Gauteng",
+    "★★★★★ Professional diesel generator repairs across Gauteng. All brands: Cummins, Perkins, Kohler, FG Wilson. 24/7 emergency service. Call 069 382 4908 for expert repairs!",
+  keywords: [
+    "diesel generator repairs",
+    "diesel generator service gauteng",
+    "diesel engine repairs",
+    "diesel generator maintenance",
+    "diesel generator repairs johannesburg",
+    "diesel generator repairs pretoria",
+    "cummins generator repairs",
+    "perkins generator repairs",
+  ],
+  openGraph: {
+    title: "Diesel Generator Repairs Gauteng | Expert Diesel Engine Service",
+    description:
+      "Professional diesel generator repairs. All brands: Cummins, Perkins, Kohler. 24/7 emergency service across Gauteng.",
+    url: "https://generatorrepairservices.co.za/diesel-generator-repairs",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/diesel-generator-repairs",
+  },
 }
 
 export default function DieselGeneratorRepairsPage() {

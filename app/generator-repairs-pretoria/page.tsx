@@ -6,11 +6,31 @@ import ContactCTASection from "@/components/contact-cta-section"
 import StructuredData from "@/components/structured-data"
 
 export const metadata: Metadata = {
-  title: "Generator Repairs Pretoria | 24/7 Service | Call 069 382 4908",
+  title: "★★★★★ Generator Repairs Pretoria 2025 | #1 Expert 24-Hour Service",
   description:
-    "Expert generator repairs across all Pretoria suburbs. Fast response, professional service, 24/7 emergency repairs. Call 069 382 4908 for reliable generator repairs in Pretoria.",
-  keywords:
-    "generator repairs Pretoria, generator service Pretoria, generator repair near me Pretoria, Pretoria generator repairs",
+    "★★★★★ #1 professional generator repairs in Pretoria. Diesel & petrol generators. 24-hour emergency service. Certified technicians. All suburbs. Call 069 382 4908 now!",
+  keywords: [
+    "generator repairs pretoria",
+    "diesel generator repairs pretoria",
+    "petrol generator repairs pretoria",
+    "generator servicing pretoria",
+    "emergency generator repairs pretoria",
+    "24 hour generator repairs pretoria",
+    "generator maintenance pretoria",
+    "generator repair near me pretoria",
+  ],
+  openGraph: {
+    title: "Generator Repairs Pretoria | Expert 24-Hour Service",
+    description:
+      "Professional generator repairs in Pretoria. Diesel & petrol generators. 24-hour emergency service. Certified technicians serving all suburbs.",
+    url: "https://generatorrepairservices.co.za/generator-repairs-pretoria",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/generator-repairs-pretoria",
+  },
 }
 
 export default function GeneratorRepairsPretoriaPage() {

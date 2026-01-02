@@ -9,16 +9,18 @@ import { Button } from "@/components/ui/button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contact Generator Repair Services | 24/7 Emergency Service | 069 382 4908",
+  title: "★★★★★ Contact Generator Repair Services 2025 | 24/7 Emergency Service | Call 069 382 4908",
   description:
-    "Contact Generator Repair Services for professional generator repairs in Gauteng. Call 069 382 4908, WhatsApp, or email. 24/7 emergency service available.",
-  keywords: [
-    "contact generator repair",
-    "generator repair phone number",
-    "emergency generator service",
-    "Gauteng",
-    "generator repairs",
-  ],
+    "★★★★★ Contact Generator Repair Services for professional generator repairs in Gauteng. Call 069 382 4908, WhatsApp, or email info@generatorrepairservices.co.za. 24/7 emergency service available!",
+  openGraph: {
+    title: "Contact Generator Repair Services | 24/7 Emergency Service Available",
+    description:
+      "Contact Generator Repair Services for professional generator repairs in Gauteng. Call 069 382 4908, WhatsApp, or email. 24/7 emergency service available.",
+    url: "https://generatorrepairservices.co.za/contact",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
   alternates: {
     canonical: "https://generatorrepairservices.co.za/contact",
   },

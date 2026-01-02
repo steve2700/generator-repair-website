@@ -10,17 +10,18 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Generator Installation Gauteng | Professional Generator Installers | 069 382 4908",
+  title: "★★★★★ Generator Installation Gauteng 2025 | #1 Professional Installers",
   description:
-    "Expert generator installation in Gauteng. Diesel & petrol generator setup. Complete installation including wiring, transfer switches. Call 069 382 4908.",
-  keywords: [
-    "generator installation",
-    "generator installers",
-    "Gauteng",
-    "Johannesburg",
-    "Pretoria",
-    "standby generator installation",
-  ],
+    "★★★★★ #1 professional generator installation in Gauteng. Diesel & petrol generator setup. Complete installation including wiring, transfer switches. Call 069 382 4908.",
+  openGraph: {
+    title: "Generator Installation Gauteng | Professional Generator Installers",
+    description:
+      "Expert generator installation for residential, commercial and industrial applications. Complete setup with transfer switches. Call 069 382 4908.",
+    url: "https://generatorrepairservices.co.za/generator-installation",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
   alternates: {
     canonical: "https://generatorrepairservices.co.za/generator-installation",
   },

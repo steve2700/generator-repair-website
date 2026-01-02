@@ -6,11 +6,31 @@ import ContactCTASection from "@/components/contact-cta-section"
 import StructuredData from "@/components/structured-data"
 
 export const metadata: Metadata = {
-  title: "Generator Repairs Sandton | 24/7 Service | Call 069 382 4908",
+  title: "★★★★★ Generator Repairs Sandton 2025 | #1 Expert 24-Hour Service",
   description:
-    "Professional generator repairs in Sandton. Fast response to all Sandton suburbs including Bryanston, Fourways, Morningside. Call 069 382 4908 for expert generator repairs.",
-  keywords:
-    "generator repairs Sandton, generator service Sandton, generator repair Bryanston, Fourways generator repairs",
+    "★★★★★ #1 professional generator repairs in Sandton. Fast response to Bryanston, Fourways, Morningside, Sunninghill. 24/7 emergency service. Call 069 382 4908!",
+  keywords: [
+    "generator repairs sandton",
+    "diesel generator repairs sandton",
+    "generator servicing sandton",
+    "generator repairs bryanston",
+    "generator repairs fourways",
+    "emergency generator repairs sandton",
+    "24 hour generator repairs sandton",
+    "generator maintenance sandton",
+  ],
+  openGraph: {
+    title: "Generator Repairs Sandton | Expert 24-Hour Service",
+    description:
+      "Professional generator repairs in Sandton. Fast response to all suburbs. 24/7 emergency service. Certified technicians.",
+    url: "https://generatorrepairservices.co.za/generator-repairs-sandton",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/generator-repairs-sandton",
+  },
 }
 
 export default function GeneratorRepairsSandtonPage() {

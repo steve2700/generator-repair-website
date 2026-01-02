@@ -2,9 +2,9 @@ export default function OrganizationSchema() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://generator-repairs.vercel.app",
+    "@id": "https://generatorrepairservices.co.za",
     name: "Generator Repair Services Gauteng",
-    image: "https://generator-repairs.vercel.app/og-image.jpg",
+    image: "https://generatorrepairservices.co.za/og-image.jpg",
     description:
       "Professional generator repair, servicing, and maintenance across Gauteng. 24/7 emergency service. All brands. Call 069 382 4908.",
     address: {
@@ -18,8 +18,9 @@ export default function OrganizationSchema() {
       latitude: -26.2041,
       longitude: 28.0473,
     },
-    url: "https://generator-repairs.vercel.app",
+    url: "https://generatorrepairservices.co.za",
     telephone: "+27693824908",
+    email: "info@generatorrepairservices.co.za",
     priceRange: "$$",
     openingHoursSpecification: [
       {

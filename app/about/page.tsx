@@ -9,16 +9,18 @@ import { Card, CardContent } from "@/components/ui/card"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About Generator Repair Services | 15+ Years Experience | Certified Technicians",
+  title: "★★★★★ About Generator Repair Services 2025 | #1 15+ Years Experience | Certified Technicians",
   description:
-    "Learn about Generator Repair Services - Gauteng's leading generator repair specialists. 15+ years experience, certified technicians, 24/7 emergency service. Call 069 382 4908.",
-  keywords: [
-    "about generator repair services",
-    "generator repair company",
-    "certified technicians",
-    "Gauteng",
-    "generator specialists",
-  ],
+    "★★★★★ Learn about Generator Repair Services - Gauteng's #1 leading generator repair specialists. 15+ years experience, certified technicians, 24/7 emergency service. Call 069 382 4908.",
+  openGraph: {
+    title: "About Generator Repair Services | Expert Generator Specialists",
+    description:
+      "Gauteng's leading generator repair specialists. 15+ years experience, certified technicians, 24/7 emergency service. Call 069 382 4908.",
+    url: "https://generatorrepairservices.co.za/about",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
   alternates: {
     canonical: "https://generatorrepairservices.co.za/about",
   },

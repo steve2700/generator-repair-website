@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://generator-repairs.vercel.app"
+  const baseUrl = "https://generatorrepairservices.co.za"
   const currentDate = new Date()
 
   // Core pages

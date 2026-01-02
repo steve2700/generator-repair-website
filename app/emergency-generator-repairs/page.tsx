@@ -8,11 +8,31 @@ import Card from "@/components/ui/card"
 import CardContent from "@/components/ui/card-content"
 
 export const metadata: Metadata = {
-  title: "24/7 Emergency Generator Repairs Gauteng | Fast Response",
+  title: "★★★★★ 24/7 Emergency Generator Repairs Gauteng 2025 | Fast Response | 069 382 4908",
   description:
-    "Urgent generator repairs available 24/7 across Gauteng. Fast response for generator emergencies. Call 069 382 4908 now for immediate assistance.",
-  keywords:
-    "emergency generator repairs, 24 hour generator service, urgent generator repairs, generator breakdown service",
+    "★★★★★ Urgent generator repairs 24/7 across Gauteng. Under 2-hour response. All brands. Emergency breakdown service. Call 069 382 4908 for immediate assistance now!",
+  keywords: [
+    "emergency generator repairs",
+    "24 hour generator repairs",
+    "urgent generator repairs",
+    "generator breakdown service",
+    "generator emergency service gauteng",
+    "24/7 generator repairs johannesburg",
+    "emergency generator repairs pretoria",
+    "same day generator repairs",
+  ],
+  openGraph: {
+    title: "24/7 Emergency Generator Repairs Gauteng | Fast Response",
+    description:
+      "Urgent generator repairs 24/7 across Gauteng. Under 2-hour response. Emergency breakdown service. Call 069 382 4908 now.",
+    url: "https://generatorrepairservices.co.za/emergency-generator-repairs",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/emergency-generator-repairs",
+  },
 }
 
 export default function EmergencyGeneratorRepairsPage() {

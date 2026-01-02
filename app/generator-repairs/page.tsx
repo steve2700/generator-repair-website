@@ -12,18 +12,18 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Generator Repairs Gauteng | Professional Generator Repair Service | 069 382 4908",
+  title: "★★★★★ Expert Generator Repairs Gauteng 2025 | #1 Professional Service",
   description:
-    "Expert generator repairs in Gauteng. Diesel, petrol & industrial generators. 24/7 emergency service. Certified technicians. Call 069 382 4908 for same-day repairs.",
-  keywords: [
-    "generator repairs",
-    "generator repair service",
-    "Gauteng",
-    "Johannesburg",
-    "Pretoria",
-    "diesel generator repairs",
-    "emergency repairs",
-  ],
+    "★★★★★ #1 professional generator repairs in Gauteng. Diesel, petrol & industrial generators. 24/7 emergency service. Certified technicians. Call 069 382 4908 for same-day repairs.",
+  openGraph: {
+    title: "Expert Generator Repairs Gauteng | Professional Generator Repair Service",
+    description:
+      "Professional generator repairs across Gauteng. 24/7 emergency service, certified technicians, all brands serviced. Call 069 382 4908.",
+    url: "https://generatorrepairservices.co.za/generator-repairs",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
   alternates: {
     canonical: "https://generatorrepairservices.co.za/generator-repairs",
   },

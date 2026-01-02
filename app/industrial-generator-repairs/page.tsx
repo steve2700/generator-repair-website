@@ -6,11 +6,21 @@ import ContactCTASection from "@/components/contact-cta-section"
 import StructuredData from "@/components/structured-data"
 
 export const metadata: Metadata = {
-  title: "Industrial Generator Repairs Gauteng | Heavy-Duty Power Solutions",
+  title: "★★★★★ Industrial Generator Repairs Gauteng 2025 | #1 Heavy-Duty Power Solutions | Call 069 382 4908",
   description:
-    "Expert industrial generator repairs for factories, warehouses, and commercial facilities across Gauteng. 24/7 emergency service. Call 069 382 4908.",
-  keywords:
-    "industrial generator repairs, commercial generator service, heavy duty generator repairs, factory backup power",
+    "★★★★★ #1 expert industrial generator repairs for factories, warehouses & commercial facilities across Gauteng. 24/7 emergency service for heavy-duty generators. Call 069 382 4908!",
+  openGraph: {
+    title: "Industrial Generator Repairs Gauteng | Heavy-Duty Power Solutions",
+    description:
+      "Expert industrial generator repairs for factories, warehouses, and commercial facilities across Gauteng. 24/7 emergency service. Call 069 382 4908.",
+    url: "https://generatorrepairservices.co.za/industrial-generator-repairs",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/industrial-generator-repairs",
+  },
 }
 
 export default function IndustrialGeneratorRepairsPage() {

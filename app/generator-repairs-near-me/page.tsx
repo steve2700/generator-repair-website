@@ -7,11 +7,21 @@ import ContactCTASection from "@/components/contact-cta-section"
 import SuburbsGrid from "@/components/suburbs-grid"
 
 export const metadata: Metadata = {
-  title: "Generator Repairs Near Me | Local 24/7 Service | 069 382 4908",
+  title: "★★★★★ Generator Repairs Near Me 2025 | Local 24/7 Service",
   description:
-    "Looking for generator repairs near you? Fast local service across Gauteng. Same-day repairs, certified technicians, 24/7 emergency support. Call 069 382 4908 now.",
-  keywords:
-    "generator repairs near me, local generator repair, generator service near me, emergency generator repair nearby, generator technician near me",
+    "★★★★★ Looking for generator repairs near you? Fast local service across Gauteng. Same-day repairs, certified technicians, 24/7 emergency support. Call 069 382 4908 now.",
+  openGraph: {
+    title: "Generator Repairs Near Me | Local 24/7 Service",
+    description:
+      "Fast local generator repair service across Gauteng. Same-day repairs, certified technicians, 24/7 emergency support available.",
+    url: "https://generatorrepairservices.co.za/generator-repairs-near-me",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/generator-repairs-near-me",
+  },
 }
 
 export default function GeneratorRepairsNearMePage() {

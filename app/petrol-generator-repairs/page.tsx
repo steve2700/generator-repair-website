@@ -6,10 +6,21 @@ import ContactCTASection from "@/components/contact-cta-section"
 import StructuredData from "@/components/structured-data"
 
 export const metadata: Metadata = {
-  title: "Petrol Generator Repairs Gauteng | Expert Gasoline Engine Service",
+  title: "★★★★★ Petrol Generator Repairs Gauteng 2025 | #1 Expert Gasoline Engine Service | Call 069 382 4908",
   description:
-    "Professional petrol generator repairs across Gauteng. Fast repair service for all petrol generator brands. Call 069 382 4908 for expert repairs and maintenance.",
-  keywords: "petrol generator repairs, gasoline generator service, petrol engine repairs, generator repairs Gauteng",
+    "★★★★★ #1 professional petrol generator repairs across Gauteng. Fast repair service for all petrol/gasoline generator brands. Carburetor cleaning, spark plug replacement. Call 069 382 4908!",
+  openGraph: {
+    title: "Petrol Generator Repairs Gauteng | Expert Gasoline Engine Service",
+    description:
+      "Professional petrol generator repairs across Gauteng. Fast repair service for all petrol generator brands. Call 069 382 4908 for expert repairs and maintenance.",
+    url: "https://generatorrepairservices.co.za/petrol-generator-repairs",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/petrol-generator-repairs",
+  },
 }
 
 export default function PetrolGeneratorRepairsPage() {

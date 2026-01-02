@@ -6,11 +6,21 @@ import Breadcrumbs from "@/components/breadcrumbs"
 import ContactCTASection from "@/components/contact-cta-section"
 
 export const metadata: Metadata = {
-  title: "Residential Generator Repairs | Home Generator Service | 069 382 4908",
+  title: "★★★★★ Residential Generator Repairs 2025 | Home Generator Service",
   description:
-    "Expert residential generator repairs across Gauteng. Keep your home powered during load-shedding. All brands serviced. Family-owned business since 2008. Call 069 382 4908.",
-  keywords:
-    "residential generator repairs, home generator repairs, domestic generator service, household generator repairs, home backup power repairs",
+    "★★★★★ Expert residential generator repairs across Gauteng. Keep your home powered during load-shedding. All brands serviced. Family-owned business since 2008. Call 069 382 4908.",
+  openGraph: {
+    title: "Residential Generator Repairs | Home Generator Service",
+    description:
+      "Expert residential generator repairs across Gauteng. Keep your home powered during load-shedding. All brands serviced.",
+    url: "https://generatorrepairservices.co.za/residential-generator-repairs",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/residential-generator-repairs",
+  },
 }
 
 export default function ResidentialGeneratorRepairsPage() {

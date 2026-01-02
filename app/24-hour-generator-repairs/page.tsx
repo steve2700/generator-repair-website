@@ -7,11 +7,21 @@ import Breadcrumbs from "@/components/breadcrumbs"
 import ContactCTASection from "@/components/contact-cta-section"
 
 export const metadata: Metadata = {
-  title: "24 Hour Generator Repairs | Emergency Service | Call 069 382 4908",
+  title: "★★★★★ 24 Hour Generator Repairs 2025 | #1 Emergency Service | Call 069 382 4908",
   description:
-    "24/7 emergency generator repairs across Gauteng. Rapid response team available day and night. When your generator fails, we answer. Call 069 382 4908 anytime.",
-  keywords:
-    "24 hour generator repairs, 24/7 generator service, emergency generator repair, after hours generator repairs, weekend generator service",
+    "★★★★★ #1 24/7 emergency generator repairs across Gauteng. Rapid response team available day and night. When your generator fails, we answer. Call 069 382 4908 anytime!",
+  openGraph: {
+    title: "24 Hour Generator Repairs | Emergency Service Available Now",
+    description:
+      "24/7 emergency generator repairs across Gauteng. Rapid response team available day and night. When your generator fails, we answer. Call 069 382 4908.",
+    url: "https://generatorrepairservices.co.za/24-hour-generator-repairs",
+    siteName: "Generator Repair Services",
+    locale: "en_ZA",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://generatorrepairservices.co.za/24-hour-generator-repairs",
+  },
 }
 
 export default function TwentyFourHourGeneratorRepairsPage() {
