@@ -38,7 +38,27 @@ export default function DieselGeneratorRepairsPage() {
 
   return (
     <>
-      <StructuredData type="service" />
+      <StructuredData data={{
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Diesel Generator Repair",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "Generator Repair Services",
+          "telephone": "069 382 4908",
+          "url": "https://generatorrepairservices.co.za",
+          "areaServed": {
+            "@type": "City",
+            "name": "Gauteng",
+            "containedInPlace": {
+              "@type": "Country",
+              "name": "South Africa"
+            }
+          }
+        },
+        "description": "Professional diesel generator repairs across Gauteng. All brands: Cummins, Perkins, Kohler, FG Wilson. 24/7 emergency service.",
+        "url": "https://generatorrepairservices.co.za/diesel-generator-repairs"
+      }} />
       <Breadcrumbs items={breadcrumbs} />
 
       <div className="container mx-auto px-4 py-12 max-w-5xl">
