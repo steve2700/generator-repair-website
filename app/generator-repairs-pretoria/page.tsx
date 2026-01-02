@@ -6,7 +6,7 @@ import ContactCTASection from "@/components/contact-cta-section"
 import StructuredData from "@/components/structured-data"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Generator Repairs Pretoria 2025 | #1 Expert 24-Hour Service",
+  title: "★★★★★ Generator Repairs Pretoria 2026 | #1 Expert 24-Hour Service",
   description:
     "★★★★★ #1 professional generator repairs in Pretoria. Diesel & petrol generators. 24-hour emergency service. Certified technicians. All suburbs. Call 069 382 4908 now!",
   keywords: [
@@ -61,8 +61,53 @@ export default function GeneratorRepairsPretoriaPage() {
 
   return (
     <>
-      <StructuredData type="service" />
+       <StructuredData data={{
+  "@context": "https://schema.org",
+  "@type": "Generator Repairs Pretoria",
+  "name": "Generator Repairs Pretoria",
+  "serviceType": "Generator Repairs Pretoria",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Generator Repair Services",
+    "telephone": "069 382 4908",
+    "url": "https://generatorrepairservices.co.za",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gauteng",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  },
+  "description": "Professional generator repairs in Pretoria. Diesel & petrol generators. 24-hour emergency service. Certified technicians serving all suburbs.",
+  "url": "https://generatorrepairservices.co.za/generator-repairs-pretoria",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "069 382 4908",
+      "availableLanguage": "English",
+      "contactType": "Emergency"
+    }
+  }
+}} />
       <Breadcrumbs items={breadcrumbs} />
+      
 
       <div className="container mx-auto px-4 py-12 max-w-5xl">
         <div className="mb-12 text-center">
