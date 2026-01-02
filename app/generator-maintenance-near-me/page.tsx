@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Generator Maintenance Near Me | Comprehensive Maintenance Plans",
     description:
-      "Expert generator maintenance plans. Prevent expensive breakdowns. Extend generator life by 300%. Call 069 382 4908.",
+      ".",
     url: "https://generatorrepairservices.co.za/generator-maintenance-near-me",
     siteName: "Generator Repair Services",
     locale: "en_ZA",
@@ -29,13 +29,53 @@ export const metadata: Metadata = {
 export default function GeneratorMaintenanceNearMePage() {
   return (
     <>
-      <StructuredData
-        type="Service"
-        name="Generator Maintenance Near Me"
-        description="Comprehensive generator maintenance plans with local technicians covering all of Gauteng"
-      />
-
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Generator Maintenance Near Me" }]} />
+       <StructuredData data={{
+  "@context": "https://schema.org",
+  "@type": "GeneratorMaintenanceNearMe",
+  "name": "GeneratorMaintenanceNearMe",
+  "serviceType": "GeneratorMaintenanceNearMe",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Generator Repair Services",
+    "telephone": "069 382 4908",
+    "url": "https://generatorrepairservices.co.za",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gauteng",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  },
+  "description": "Expert generator maintenance plans. Prevent expensive breakdowns. Extend generator life by 300%. Call 069 382 4908.",
+  "url": "https://generatorrepairservices.co.za/generator-maintenance-near-me",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "069 382 4908",
+      "availableLanguage": "English",
+      "contactType": "Emergency"
+    }
+  }
+}} />
+      <Breadcrumbs items={breadcrumbs} />
+      
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-white py-16 md:py-24">
