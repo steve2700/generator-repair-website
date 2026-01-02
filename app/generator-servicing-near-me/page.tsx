@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Phone, MessageCircle, CheckCircle, Clock, Shield, Wrench, MapPin, Star } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Generator Servicing Near Me 2025 | Local Expert Technicians",
+  title: "★★★★★ Generator Servicing Near Me 2026 | Local Expert Technicians",
   description:
     "★★★★★ Looking for generator servicing near me? Expert local technicians available 24/7 across Gauteng. Comprehensive servicing from R850. Call 069 382 4908 for same-day service.",
   keywords:
@@ -27,15 +27,59 @@ export const metadata: Metadata = {
 }
 
 export default function GeneratorServicingNearMePage() {
+  const breadcrumbs = [{ label: "Home", href: "/" }, { label: "Generator Servicing Near Me" }]
+
+    
+  
   return (
     <>
-      <StructuredData
-        type="Service"
-        name="Generator Servicing Near Me"
-        description="Professional generator servicing with local technicians available 24/7 across Gauteng"
-      />
+      <StructuredData data={{
+  "@context": "https://schema.org",
+  "@type": "Generator Servicing Near Me",
+  "name": "Generator Servicing Near Me",
+  "serviceType": "Generator Servicing Near Me",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Generator Repair Services",
+    "telephone": "069 382 4908",
+    "url": "https://generatorrepairservices.co.za",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gauteng",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  },
+  "description": "Expert generator servicing in your area. 5,000+ satisfied customers. Same-day service available. Call 069 382 4908 now.",
+  "url": "https://generatorrepairservices.co.za/generator-servicing-near-me",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "069 382 4908",
+      "availableLanguage": "English",
+      "contactType": "Emergency"
+    }
+  }
+}} />
+      <Breadcrumbs items={breadcrumbs} />
 
-      <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Generator Servicing Near Me" }]} />
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-white py-16 md:py-24">
