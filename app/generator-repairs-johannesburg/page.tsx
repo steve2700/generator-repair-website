@@ -61,8 +61,54 @@ export default function GeneratorRepairsJohannesburgPage() {
 
   return (
     <>
-      <StructuredData type="service" />
+      <StructuredData data={{
+  "@context": "https://schema.org",
+  "@type": "Generator Repairs Johannesburg",
+  "name": "Generator Repairs Johannesburg",
+  "serviceType": "Generator Repairs Johannesburg",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Generator Repair Services",
+    "telephone": "069 382 4908",
+    "url": "https://generatorrepairservices.co.za",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gauteng",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  },
+  "description": "Expert generator maintenance plans. Prevent expensive breakdowns. Extend generator life by 300%. Call 069 382 4908.",
+  "url": "https://generatorrepairservices.co.za/generator-repairs-johannesburg",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "069 382 4908",
+      "availableLanguage": "English",
+      "contactType": "Emergency"
+    }
+  }
+}} />
       <Breadcrumbs items={breadcrumbs} />
+      
+     
 
       <div className="container mx-auto px-4 py-12 max-w-5xl">
         <div className="mb-12 text-center">
