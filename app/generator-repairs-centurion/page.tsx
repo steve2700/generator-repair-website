@@ -6,7 +6,7 @@ import ContactCTASection from "@/components/contact-cta-section"
 import StructuredData from "@/components/structured-data"
 
 export const metadata: Metadata = {
-  title: "★★★★★ Generator Repairs Centurion 2025 | #1 24/7 Service | Call 069 382 4908",
+  title: "★★★★★ Generator Repairs Centurion 2026 | #1 24/7 Service | Call 069 382 4908",
   description:
     "★★★★★ #1 professional generator repairs in Centurion. Expert service across Irene, Highveld, Wierdapark & all Centurion suburbs. Same-day repairs. Call 069 382 4908!",
   openGraph: {
@@ -46,9 +46,53 @@ export default function GeneratorRepairsCenturionPage() {
 
   return (
     <>
-      <StructuredData type="service" />
+      <StructuredData data={{
+  "@context": "https://schema.org",
+  "@type": "Generator Repairs Centurion",
+  "name": "Generator Repairs Centurion",
+  "serviceType": "Generator Repairs Centurion",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Generator Repair Services",
+    "telephone": "069 382 4908",
+    "url": "https://generatorrepairservices.co.za",
+    "areaServed": {
+      "@type": "City",
+      "name": "Gauteng",
+      "containedInPlace": {
+        "@type": "Country",
+        "name": "South Africa"
+      }
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  },
+  "description": "Expert generator maintenance plans. Prevent expensive breakdowns. Extend generator life by 300%. Call 069 382 4908.",
+  "url": "Professional generator repairs in Centurion. Expert service across all Centurion suburbs including Irene, Highveld, Wierdapark. Call 069 382 4908",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "servicePhone": {
+      "@type": "ContactPoint",
+      "telephone": "069 382 4908",
+      "availableLanguage": "English",
+      "contactType": "Emergency"
+    }
+  }
+}} />
       <Breadcrumbs items={breadcrumbs} />
-
+      
       <div className="container mx-auto px-4 py-12 max-w-5xl">
         <div className="mb-12 text-center">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full mb-4">
