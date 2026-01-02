@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 }
 
 export default function GeneratorMaintenanceNearMePage() {
+  const breadcrumbs = [{ label: "Home", href: "/" }, { label: "GeneratorMaintenanceNearMe" }]
   return (
     <>
        <StructuredData data={{
