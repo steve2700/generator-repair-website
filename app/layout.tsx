@@ -2,11 +2,14 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
+import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
 import OrganizationSchema from "@/components/organization-schema"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const geist = Geist({ subsets: ["latin"] })
+const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://generatorrepairservices.co.za"),
@@ -82,7 +85,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://generatorrepairservices.co.za",
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({
@@ -95,8 +98,13 @@ export default function RootLayout({
       <head>
         <OrganizationSchema />
       </head>
-      <body className={`font-sans antialiased`}>
-        {children}
+      <body className={`${geist.className} font-sans antialiased`}>
+        <SiteHeader />
+        <main>
+          {children}
+        </main>
+        <SiteFooter />
+        <MobileStickyCTA />
         <Analytics />
       </body>
     </html>
