@@ -1,8 +1,6 @@
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
+
 import { SuburbsGrid } from "@/components/suburbs-grid"
 import { ContactCTASection } from "@/components/contact-cta-section"
-import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
 import { SchemaMarkup } from "@/components/schema-markup"
 import { Clock, Shield, Award, Wrench, Settings, AlertCircle, Zap, Fuel, Factory, MapPin } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
@@ -84,7 +82,7 @@ export default function HomePage() {
   return (
     <>
       <SchemaMarkup type="LocalBusiness" />
-      <SiteHeader />
+     
       <main className="min-h-screen">
         <section className="relative bg-gradient-to-br from-primary/5 via-background to-primary/10 overflow-hidden">
           <div className="absolute inset-0 opacity-10">
@@ -635,11 +633,7 @@ export default function HomePage() {
         </section>
 
         <SuburbsGrid title="Generator Servicing Across Pretoria" suburbs={pretoriaSuburbs} />
-
         <ContactCTASection />
-      </main>
-      <SiteFooter />
-      <MobileStickyCTA />
     </>
   )
 }
