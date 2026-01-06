@@ -1,8 +1,6 @@
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
+
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { ContactCTASection } from "@/components/contact-cta-section"
-import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
 import { SchemaMarkup } from "@/components/schema-markup"
 import { Shield, Award, Clock, Check, Wrench } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
@@ -30,7 +28,6 @@ export default function AboutPage() {
   return (
     <>
       <SchemaMarkup />
-      <SiteHeader />
       <main>
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "About Us" }]} />
@@ -217,8 +214,7 @@ export default function AboutPage() {
 
         <ContactCTASection />
       </main>
-      <SiteFooter />
-      <MobileStickyCTA />
+      
     </>
   )
 }
