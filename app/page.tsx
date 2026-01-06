@@ -634,6 +634,7 @@ export default function HomePage() {
 
         <SuburbsGrid title="Generator Servicing Across Pretoria" suburbs={pretoriaSuburbs} />
         <ContactCTASection />
+        </main> 
     </>
   )
 }
