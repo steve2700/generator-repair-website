@@ -1,9 +1,7 @@
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
+
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { HeroSection } from "@/components/hero-section"
 import { ContactCTASection } from "@/components/contact-cta-section"
-import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
 import { SchemaMarkup } from "@/components/schema-markup"
 import { Check } from "lucide-react"
 import Link from "next/link"
@@ -34,7 +32,7 @@ export default function GeneratorInstallationPage() {
         serviceType="Generator Installation"
         pageDescription="Professional generator installation services across Gauteng"
       />
-      <SiteHeader />
+      
       <main>
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Generator Installation" }]} />
@@ -267,8 +265,7 @@ export default function GeneratorInstallationPage() {
 
         <ContactCTASection />
       </main>
-      <SiteFooter />
-      <MobileStickyCTA />
+     
     </>
   )
 }
