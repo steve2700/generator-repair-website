@@ -1,8 +1,6 @@
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
+
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { ContactCTASection } from "@/components/contact-cta-section"
-import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
 import { SchemaMarkup } from "@/components/schema-markup"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import type { Metadata } from "next"
@@ -30,7 +28,7 @@ export default function FAQPage() {
   return (
     <>
       <SchemaMarkup />
-      <SiteHeader />
+      
       <main>
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "FAQ" }]} />
@@ -462,8 +460,7 @@ export default function FAQPage() {
 
         <ContactCTASection />
       </main>
-      <SiteFooter />
-      <MobileStickyCTA />
+      
     </>
   )
 }
