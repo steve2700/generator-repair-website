@@ -1,7 +1,5 @@
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
+
 import { Breadcrumbs } from "@/components/breadcrumbs"
-import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
 import { SchemaMarkup } from "@/components/schema-markup"
 import { Phone, Mail, MapPin, MessageCircle, Clock } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
@@ -30,7 +28,7 @@ export default function ContactPage() {
   return (
     <>
       <SchemaMarkup />
-      <SiteHeader />
+      
       <main>
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Contact Us" }]} />
@@ -262,8 +260,7 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
-      <MobileStickyCTA />
+      
     </>
   )
 }
