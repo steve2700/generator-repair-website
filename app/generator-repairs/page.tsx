@@ -1,9 +1,7 @@
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
+
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { HeroSection } from "@/components/hero-section"
 import { ContactCTASection } from "@/components/contact-cta-section"
-import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
 import { SchemaMarkup } from "@/components/schema-markup"
 import { SuburbsGrid } from "@/components/suburbs-grid"
 import { Check, Wrench, AlertCircle } from "lucide-react"
@@ -52,7 +50,7 @@ export default function GeneratorRepairsPage() {
   return (
     <>
       <SchemaMarkup serviceType="Generator Repairs" pageDescription="Professional generator repairs across Gauteng" />
-      <SiteHeader />
+      
       <main>
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Generator Repairs" }]} />
@@ -337,8 +335,6 @@ export default function GeneratorRepairsPage() {
 
         <ContactCTASection />
       </main>
-      <SiteFooter />
-      <MobileStickyCTA />
     </>
   )
 }
