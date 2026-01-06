@@ -1,9 +1,7 @@
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
+
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { HeroSection } from "@/components/hero-section"
 import { ContactCTASection } from "@/components/contact-cta-section"
-import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
 import { SchemaMarkup } from "@/components/schema-markup"
 import { SuburbsGrid } from "@/components/suburbs-grid"
 import { Check, Settings, Calendar } from "lucide-react"
@@ -55,7 +53,6 @@ export default function GeneratorServicingPage() {
         serviceType="Generator Servicing"
         pageDescription="Professional generator servicing and maintenance across Gauteng"
       />
-      <SiteHeader />
       <main>
         <div className="container mx-auto px-4">
           <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Generator Servicing" }]} />
@@ -378,8 +375,6 @@ export default function GeneratorServicingPage() {
 
         <ContactCTASection />
       </main>
-      <SiteFooter />
-      <MobileStickyCTA />
     </>
   )
 }
