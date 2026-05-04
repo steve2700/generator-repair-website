@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { MobileStickyCTA } from "@/components/mobile-sticky-cta"
 import OrganizationSchema from "@/components/organization-schema"
+import WhatsAppButton from "@/components/whatsapp-button"
 import "./globals.css"
 
 const geist = Geist({ subsets: ["latin"] })
@@ -105,6 +106,7 @@ export default function RootLayout({
         </main>
         <SiteFooter />
         <MobileStickyCTA />
+        <WhatsAppButton />
         <Analytics />
       </body>
     </html>
